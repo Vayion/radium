@@ -8,7 +8,14 @@ pub mod types;
 
 use core::{
 	cell::Cell,
-	sync::atomic::*,
+	sync::atomic::{
+		AtomicI8, AtomicU8,
+		AtomicI16, AtomicU16,
+		AtomicI32, AtomicU32,
+		AtomicI64, AtomicU64,
+		AtomicIsize, AtomicUsize,
+		Ordering, AtomicBool, AtomicPtr
+	},
 };
 
 use crate::marker::*;
